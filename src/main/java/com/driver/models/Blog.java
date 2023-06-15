@@ -1,5 +1,7 @@
 package com.driver.models;
 
+import org.springframework.data.annotation.CreatedDate;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,6 +19,7 @@ public class Blog{
 
     private String content;
 
+    @CreatedDate
     private Date pubDate;
 
     @ManyToOne
